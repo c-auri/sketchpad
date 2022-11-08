@@ -1,0 +1,25 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: grid;
+    place-items: center;
+}
+
+#sketchpad {
+    height: 500px;
+    width: 500px;
+    border: 1px black solid;
+    display: grid;
+}
+
+.cell {
+    box-sizing: border-box;
+    aspect-ratio: 1;
+    background-color: thistle;
+    border: 1px solid darkviolet;
+}
