@@ -1,11 +1,17 @@
 let color = "salmon"
 
+const slider = document.querySelector('#slider-input')
+const sliderValues = document.querySelectorAll('.slider-value')
 const pad = document.querySelector('#sketchpad')
 const padSize = pad.offsetHeight
 
-function fillPad(count) {
-    pad.style.gridTemplateColumns = `repeat(${count} , 1fr)`
-    for (let i = count ** 2; i > 0; i-- > 0) {
+slider.addEventListener("input", e => fillPad(e.target.value))
+
+function fillPad(n) {
+    sliderValues.forEach(e => e.innerText = n)
+    pad.textContent = ""
+    pad.style.gridTemplateColumns = `repeat(${n} , 1fr)`
+    for (let i = n ** 2; i > 0; i-- > 0) {
         const cell = document.createElement("div")
         cell.classList.add("cell")
         cell.addEventListener("mouseover", e => paint(e.target))

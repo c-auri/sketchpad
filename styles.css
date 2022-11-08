@@ -6,8 +6,11 @@ body {
 
 main {
     flex: 1;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     place-items: center;
+    justify-content: center;
+    gap: 5rem;
 }
 
 #sketchpad {
@@ -15,6 +18,10 @@ main {
     width: 500px;
     border: 1px black solid;
     display: grid;
+}
+
+#slider > p {
+    text-align: center;
 }
 
 .cell {
