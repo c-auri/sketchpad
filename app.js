@@ -1,4 +1,4 @@
-let color = "salmon"
+const color = "steelblue"
 
 const slider = document.querySelector('#slider-input')
 const sliderValues = document.querySelectorAll('.slider-value')
