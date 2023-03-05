@@ -15,14 +15,22 @@ body {
 #slider {
     display: grid;
     place-content: center;
+    gap: 1rem;
+}
+
+#slider label {
+    font-size: 1.5rem;
 }
 
 #slider > input {
     width: 10rem;
 }
 
-#slider > p {
+#slider label,
+#slider span {
+    font-family: sans-serif;
     text-align: center;
+    color: gray;
 }
 
 .cell {
