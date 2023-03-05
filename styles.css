@@ -5,6 +5,12 @@ body {
     gap: 5rem;
 }
 
+h1, label, span {
+    font-family: sans-serif;
+    text-align: center;
+    color: gray;
+}
+
 #sketchpad {
     height: 500px;
     width: 500px;
@@ -24,13 +30,6 @@ body {
 
 #slider > input {
     width: 10rem;
-}
-
-#slider label,
-#slider span {
-    font-family: sans-serif;
-    text-align: center;
-    color: gray;
 }
 
 .cell {
